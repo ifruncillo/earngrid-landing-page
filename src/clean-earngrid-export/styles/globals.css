@@ -19,13 +19,13 @@
   --popover: var(--deep-indigo);
   --popover-foreground: var(--warm-white);
   --primary: var(--spring-green);
-  --primary-foreground: var(--warm-white);
+  --primary-foreground: var(--deep-indigo); /* Fixed: Navy text on Spring Green buttons */
   --secondary: var(--slate);
   --secondary-foreground: var(--warm-white);
   --muted: rgba(255, 249, 240, 0.1);
   --muted-foreground: var(--slate);
   --accent: var(--spring-green);
-  --accent-foreground: var(--warm-white);
+  --accent-foreground: var(--deep-indigo); /* Fixed: Navy text on Spring Green accents */
   --destructive: #d4183d;
   --destructive-foreground: #ffffff;
   --border: rgba(255, 249, 240, 0.1);
@@ -44,7 +44,7 @@
   --sidebar: var(--deep-indigo);
   --sidebar-foreground: var(--warm-white);
   --sidebar-primary: var(--spring-green);
-  --sidebar-primary-foreground: var(--warm-white);
+  --sidebar-primary-foreground: var(--deep-indigo); /* Fixed: Navy text on Spring Green sidebar buttons */
   --sidebar-accent: rgba(255, 249, 240, 0.1);
   --sidebar-accent-foreground: var(--warm-white);
   --sidebar-border: rgba(255, 249, 240, 0.1);

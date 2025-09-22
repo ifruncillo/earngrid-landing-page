@@ -20,7 +20,7 @@ export function WaitlistSection() {
             <Button 
               size="lg"
               onClick={handleJoinWaitlist}
-              className="bg-[#39E19D] text-[#FFF9F0] hover:bg-[#64F2C6] hover:scale-105 hover:shadow-lg hover:shadow-[#39E19D]/30 px-12 py-4 text-xl rounded-xl transition-all duration-300 ease-in-out"
+              className="bg-[#39E19D] text-[#1B2240] hover:bg-[#64F2C6] hover:scale-105 hover:shadow-lg hover:shadow-[#39E19D]/30 px-12 py-4 text-xl rounded-xl transition-all duration-300 ease-in-out"
             >
               Join Beta Program
             </Button>

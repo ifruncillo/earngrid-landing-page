@@ -3,12 +3,12 @@ export function HowItWorksSection() {
     {
       number: "01",
       title: "Download & Install",
-      description: "One-click installation. IdleNet installs like any trusted software."
+      description: "One-click installation. EarnGrid installs like any trusted software."
     },
     {
       number: "02", 
       title: "Automatic Detection",
-      description: "IdleNet detects when your computer is idle and safely joins the network."
+      description: "EarnGrid detects when your computer is idle and safely joins the network."
     },
     {
       number: "03",

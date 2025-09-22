@@ -106,7 +106,7 @@ export function EarningsCalculator() {
               <Button 
                 onClick={handleCalculate}
                 disabled={!cpu || !ram || !usage}
-                className="w-full bg-[#39E19D] text-[#FFF9F0] hover:bg-[#64F2C6] rounded-xl"
+                className="w-full bg-[#39E19D] text-[#1B2240] hover:bg-[#64F2C6] rounded-xl"
                 style={{ borderRadius: '12px' }}
               >
                 Calculate Earnings

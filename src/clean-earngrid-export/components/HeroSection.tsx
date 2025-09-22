@@ -26,7 +26,7 @@ export function HeroSection() {
                 Your computer earns while you sleep
               </h1>
               <p className="text-lg text-[#FFF9F0] leading-relaxed max-w-xl font-['Roboto']">
-                Install IdleNet with one click. Your computer automatically earns money during downtime—no configuration, no technical knowledge required.
+                Install EarnGrid with one click. Your computer automatically earns money during downtime—no configuration, no technical knowledge required.
               </p>
             </div>
 
@@ -35,8 +35,7 @@ export function HeroSection() {
               <Button 
                 size="lg"
                 onClick={handleJoinWaitlist}
-                className="bg-[#39E19D] text-[#FFF9F0] hover:bg-[#64F2C6] hover:scale-105 hover:shadow-lg hover:shadow-[#39E19D]/30 px-8 py-4 text-lg rounded-xl transition-all duration-300 ease-in-out cursor-pointer active:scale-95"
-                style={{ borderRadius: '12px' }}
+                className="bg-[#39E19D] text-[#1B2240] hover:bg-[#64F2C6] px-8 py-4 text-lg rounded-xl hover:scale-105 hover:shadow-lg hover:shadow-[#39E19D]/30 transition-all duration-300 ease-in-out cursor-pointer active:scale-95"
               >
                 Join Now
               </Button>
@@ -44,8 +43,7 @@ export function HeroSection() {
                 size="lg"
                 variant="outline"
                 onClick={scrollToHowItWorks}
-                className="border-2 border-[#FFF9F0] text-[#FFF9F0] hover:bg-[#FFF9F0] hover:text-[#1B2240] px-8 py-4 text-lg rounded-xl transition-all duration-200 ease-in-out bg-transparent"
-                style={{ borderRadius: '12px' }}
+                className="border-2 border-[#FFF9F0] text-[#FFF9F0] hover:bg-[#FFF9F0] hover:text-[#1B2240] px-8 py-4 text-lg rounded-xl transition-all duration-200 ease-in-out"
               >
                 How it works
               </Button>
@@ -80,12 +78,73 @@ export function HeroSection() {
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="w-96 h-96 lg:w-[400px] lg:h-[400px] bg-[#64F2C6] rounded-full opacity-20 blur-3xl"></div>
             </div>
-            <div className="w-80 h-80 lg:w-96 lg:h-96 bg-[#39E19D] rounded-full flex items-center justify-center relative z-10">
-              <img 
-                src="https://images.unsplash.com/photo-1628779612720-10bbe8632144?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb21wdXRlciUyMGxhcHRvcCUyMGRlc2t0b3AlMjBzZXR1cHxlbnwxfHx8fDE3NTg1MDAyNjB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                alt="Computer Setup" 
-                className="w-48 h-48 lg:w-60 lg:h-60 rounded-full object-cover"
-              />
+            
+            {/* Concentric circle design */}
+            <div className="relative z-10 flex items-center justify-center w-80 h-80 lg:w-96 lg:h-96">
+              {/* Outermost ring */}
+              <div className="absolute inset-0 rounded-full border-4 border-[#39E19D] opacity-30"></div>
+              
+              {/* Second ring */}
+              <div className="absolute inset-4 rounded-full border-3 border-[#39E19D] opacity-50"></div>
+              
+              {/* Third ring */}
+              <div className="absolute inset-8 rounded-full border-2 border-[#39E19D] opacity-70"></div>
+              
+              {/* Inner solid circle with gradient */}
+              <div className="absolute inset-12 rounded-full bg-gradient-to-br from-[#39E19D] via-[#39E19D] to-[#64F2C6] flex items-center justify-center">
+                {/* Large EarnGrid Logo - Grid network pattern */}
+                <svg width="200" height="200" viewBox="0 0 240 240" fill="none">
+                  {/* Grid connections (lines) */}
+                  <g stroke="#1B2240" strokeWidth="4" opacity="0.8">
+                    {/* Horizontal lines */}
+                    <line x1="40" y1="60" x2="200" y2="60" />
+                    <line x1="40" y1="120" x2="200" y2="120" />
+                    <line x1="40" y1="180" x2="200" y2="180" />
+                    {/* Vertical lines */}
+                    <line x1="60" y1="40" x2="60" y2="200" />
+                    <line x1="120" y1="40" x2="120" y2="200" />
+                    <line x1="180" y1="40" x2="180" y2="200" />
+                  </g>
+                  {/* Grid nodes (dots) */}
+                  <g>
+                    {/* Inactive nodes */}
+                    <circle cx="60" cy="60" r="12" fill="#1B2240" opacity="0.5" />
+                    <circle cx="120" cy="60" r="12" fill="#1B2240" opacity="0.5" />
+                    <circle cx="60" cy="120" r="12" fill="#1B2240" opacity="0.5" />
+                    <circle cx="60" cy="180" r="12" fill="#1B2240" opacity="0.5" />
+                    <circle cx="120" cy="180" r="12" fill="#1B2240" opacity="0.5" />
+                    <circle cx="180" cy="180" r="12" fill="#1B2240" opacity="0.5" />
+                    
+                    {/* Active earning nodes (highlighted) */}
+                    <circle cx="180" cy="60" r="16" fill="#1B2240" />
+                    <circle cx="120" cy="120" r="16" fill="#1B2240" />
+                    <circle cx="180" cy="120" r="16" fill="#1B2240" />
+                    
+                    {/* Inner glow for active nodes */}
+                    <circle cx="180" cy="60" r="24" fill="#1B2240" opacity="0.2" />
+                    <circle cx="120" cy="120" r="24" fill="#1B2240" opacity="0.2" />
+                    <circle cx="180" cy="120" r="24" fill="#1B2240" opacity="0.2" />
+                    
+                    {/* Pulse animation circles */}
+                    <circle cx="180" cy="60" r="30" fill="none" stroke="#1B2240" strokeWidth="2" opacity="0.6">
+                      <animate attributeName="r" values="16;40;16" dur="2s" repeatCount="indefinite" />
+                      <animate attributeName="opacity" values="0.6;0;0.6" dur="2s" repeatCount="indefinite" />
+                    </circle>
+                    <circle cx="120" cy="120" r="30" fill="none" stroke="#1B2240" strokeWidth="2" opacity="0.6">
+                      <animate attributeName="r" values="16;40;16" dur="2.5s" repeatCount="indefinite" />
+                      <animate attributeName="opacity" values="0.6;0;0.6" dur="2.5s" repeatCount="indefinite" />
+                    </circle>
+                    <circle cx="180" cy="120" r="30" fill="none" stroke="#1B2240" strokeWidth="2" opacity="0.6">
+                      <animate attributeName="r" values="16;40;16" dur="3s" repeatCount="indefinite" />
+                      <animate attributeName="opacity" values="0.6;0;0.6" dur="3s" repeatCount="indefinite" />
+                    </circle>
+                  </g>
+                </svg>
+              </div>
+              
+              {/* Subtle rotating rings for extra dynamism */}
+              <div className="absolute inset-6 rounded-full border border-[#39E19D] opacity-20 animate-spin" style={{animationDuration: '20s'}}></div>
+              <div className="absolute inset-10 rounded-full border border-[#64F2C6] opacity-15 animate-spin" style={{animationDuration: '30s', animationDirection: 'reverse'}}></div>
             </div>
           </div>
         </div>
