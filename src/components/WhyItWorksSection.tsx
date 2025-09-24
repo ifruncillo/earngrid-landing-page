@@ -23,7 +23,7 @@ export function WhyItWorksSection() {
                   <div className="w-2 h-2 bg-red-400 rounded-full mt-3 flex-shrink-0"></div>
                   <div>
                     <p className="text-[#FFF9F0] font-['Roboto']">
-                      <span className="font-medium">Big companies pay $1000s</span> for cloud computing from Amazon, Google, Microsoft
+                      <span className="font-medium">Companies overpay massively</span> for cloud computing from Amazon, Google, Microsoft
                     </p>
                   </div>
                 </div>
@@ -31,7 +31,7 @@ export function WhyItWorksSection() {
                   <div className="w-2 h-2 bg-red-400 rounded-full mt-3 flex-shrink-0"></div>
                   <div>
                     <p className="text-[#FFF9F0] font-['Roboto']">
-                      <span className="font-medium">They overpay by 10-50x</span> because they need computing power on-demand
+                      <span className="font-medium">They get charged premium prices</span> for computing power that sits idle most of the time
                     </p>
                   </div>
                 </div>
@@ -39,7 +39,7 @@ export function WhyItWorksSection() {
                   <div className="w-2 h-2 bg-red-400 rounded-full mt-3 flex-shrink-0"></div>
                   <div>
                     <p className="text-[#FFF9F0] font-['Roboto']">
-                      <span className="font-medium">Millions of computers sit idle</span> while companies waste money on expensive servers
+                      <span className="font-medium">Your computer sits idle 95% of the time</span> while this massive market inefficiency continues
                     </p>
                   </div>
                 </div>
@@ -58,7 +58,7 @@ export function WhyItWorksSection() {
                   <div className="w-2 h-2 bg-[#39E19D] rounded-full mt-3 flex-shrink-0"></div>
                   <div>
                     <p className="text-[#FFF9F0] font-['Roboto']">
-                      <span className="font-medium">Your idle computer</span> can provide the same computing power for much less
+                      <span className="font-medium">Your idle computer joins a network</span> that provides enterprise-grade computing power
                     </p>
                   </div>
                 </div>
@@ -66,7 +66,7 @@ export function WhyItWorksSection() {
                   <div className="w-2 h-2 bg-[#39E19D] rounded-full mt-3 flex-shrink-0"></div>
                   <div>
                     <p className="text-[#FFF9F0] font-['Roboto']">
-                      <span className="font-medium">Companies pay you $10s</span> instead of cloud providers $1000s
+                      <span className="font-medium">Companies pay you for computing power</span> they actually use, not idle servers
                     </p>
                   </div>
                 </div>
@@ -74,7 +74,7 @@ export function WhyItWorksSection() {
                   <div className="w-2 h-2 bg-[#39E19D] rounded-full mt-3 flex-shrink-0"></div>
                   <div>
                     <p className="text-[#FFF9F0] font-['Roboto']">
-                      <span className="font-medium">Everyone wins:</span> They save money, you earn money, idle resources get used
+                      <span className="font-medium">Companies cut costs by 90%.</span> You turn downtime into income. Wasted resources become productive assets.
                     </p>
                   </div>
                 </div>
@@ -90,7 +90,7 @@ export function WhyItWorksSection() {
               It's that simple
             </h3>
             <p className="text-[#6C7280] font-['Roboto']">
-              Distributed computing has been around for decades. We're just making it profitable for regular people with regular computers.
+              Distributed computing has been around for decades. We're just making it profitable for everyone with a computer.
             </p>
           </div>
         </div>
