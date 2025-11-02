@@ -11,7 +11,7 @@ import { BackgroundElements } from "./components/BackgroundElements";
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-[#1B2240] relative">
+    <div className="min-h-screen bg-navy relative">
       <BackgroundElements />
       <Header />
       <main>

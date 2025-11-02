@@ -26,14 +26,14 @@ export function Header() {
   };
 
   return (
-    <header className="w-full py-4 px-6 bg-[#1B2240] border-b border-white/10">
+    <header className="w-full py-4 px-6 bg-navy border-b border-white/10">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <div className="flex items-center space-x-2">
           {/* EarnGrid Logo - Grid network pattern */}
           <div className="w-8 h-8 relative">
             <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
               {/* Grid connections (lines) */}
-              <g stroke="#39E19D" strokeWidth="1.5" opacity="0.6">
+              <g className="stroke-primary" strokeWidth="1.5" opacity="0.6">
                 {/* Horizontal lines */}
                 <line x1="6" y1="8" x2="26" y2="8" />
                 <line x1="6" y1="16" x2="26" y2="16" />
@@ -46,41 +46,41 @@ export function Header() {
               {/* Grid nodes (dots) */}
               <g>
                 {/* Inactive nodes */}
-                <circle cx="8" cy="8" r="2" fill="#39E19D" opacity="0.4" />
-                <circle cx="16" cy="8" r="2" fill="#39E19D" opacity="0.4" />
-                <circle cx="8" cy="16" r="2" fill="#39E19D" opacity="0.4" />
-                <circle cx="8" cy="24" r="2" fill="#39E19D" opacity="0.4" />
-                <circle cx="16" cy="24" r="2" fill="#39E19D" opacity="0.4" />
-                <circle cx="24" cy="24" r="2" fill="#39E19D" opacity="0.4" />
+                <circle cx="8" cy="8" r="2" className="fill-primary" opacity="0.4" />
+                <circle cx="16" cy="8" r="2" className="fill-primary" opacity="0.4" />
+                <circle cx="8" cy="16" r="2" className="fill-primary" opacity="0.4" />
+                <circle cx="8" cy="24" r="2" className="fill-primary" opacity="0.4" />
+                <circle cx="16" cy="24" r="2" className="fill-primary" opacity="0.4" />
+                <circle cx="24" cy="24" r="2" className="fill-primary" opacity="0.4" />
                 
                 {/* Active earning nodes (highlighted) */}
-                <circle cx="24" cy="8" r="2.5" fill="#39E19D" />
-                <circle cx="16" cy="16" r="2.5" fill="#39E19D" />
-                <circle cx="24" cy="16" r="2.5" fill="#39E19D" />
+                <circle cx="24" cy="8" r="2.5" className="fill-primary" />
+                <circle cx="16" cy="16" r="2.5" className="fill-primary" />
+                <circle cx="24" cy="16" r="2.5" className="fill-primary" />
                 
                 {/* Glow effect for active nodes */}
-                <circle cx="24" cy="8" r="4" fill="#39E19D" opacity="0.2" />
-                <circle cx="16" cy="16" r="4" fill="#39E19D" opacity="0.2" />
-                <circle cx="24" cy="16" r="4" fill="#39E19D" opacity="0.2" />
+                <circle cx="24" cy="8" r="4" className="fill-primary" opacity="0.2" />
+                <circle cx="16" cy="16" r="4" className="fill-primary" opacity="0.2" />
+                <circle cx="24" cy="16" r="4" className="fill-primary" opacity="0.2" />
               </g>
             </svg>
           </div>
-          <span className="text-xl font-semibold text-[#FFF9F0] font-['Poppins']">
+          <span className="text-xl font-semibold text-cream font-heading">
             EarnGrid
           </span>
-          <span className="text-[#6C7280] font-['Roboto']">by IdleNet</span>
+          <span className="text-muted font-body">by IdleNet</span>
         </div>
         
         <nav className="hidden md:flex items-center space-x-8">
           <button 
             onClick={scrollToHowItWorks}
-            className="text-[#FFF9F0] hover:text-[#39E19D] transition-colors font-['Roboto'] cursor-pointer"
+            className="text-cream hover:text-primary transition-colors font-body cursor-pointer"
           >
             How it works
           </button>
           <button 
             onClick={scrollToFAQ}
-            className="text-[#FFF9F0] hover:text-[#39E19D] transition-colors font-['Roboto'] cursor-pointer"
+            className="text-cream hover:text-primary transition-colors font-body cursor-pointer"
           >
             FAQ
           </button>
@@ -88,7 +88,7 @@ export function Header() {
         
         <Button 
           onClick={handleJoinWaitlist}
-          className="bg-[#39E19D] text-[#1B2240] hover:bg-[#64F2C6] px-6 py-2 rounded-xl"
+          className="bg-primary text-navy hover:bg-primary-hover px-6 py-2 rounded-xl"
         >
           Join Now
         </Button>
