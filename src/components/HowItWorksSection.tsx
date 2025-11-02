@@ -18,13 +18,13 @@ export function HowItWorksSection() {
   ];
 
   return (
-    <section id="how-it-works" className="w-full py-20 bg-[#1B2240]">
+    <section id="how-it-works" className="w-full py-20 bg-navy">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-semibold text-[#FFF9F0] mb-4 font-['Poppins']">
+          <h2 className="text-4xl font-semibold text-cream mb-4 font-heading">
             How it works
           </h2>
-          <p className="text-lg text-[#6C7280] max-w-2xl mx-auto font-['Roboto']">
+          <p className="text-lg text-muted max-w-2xl mx-auto font-body">
             Simple as installing antivirus software. No technical setup required.
           </p>
         </div>
@@ -32,15 +32,15 @@ export function HowItWorksSection() {
         <div className="grid md:grid-cols-3 gap-8">
           {steps.map((step, index) => (
             <div key={index} className="text-center space-y-4">
-              <div className="w-16 h-16 bg-[#39E19D] rounded-full flex items-center justify-center mx-auto">
-                <span className="text-2xl font-semibold text-[#1B2240] font-['Poppins']">
+              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto">
+                <span className="text-2xl font-semibold text-navy font-heading">
                   {step.number}
                 </span>
               </div>
-              <h3 className="text-xl font-semibold text-[#FFF9F0] font-['Poppins']">
+              <h3 className="text-xl font-semibold text-cream font-heading">
                 {step.title}
               </h3>
-              <p className="text-[#6C7280] font-['Roboto'] max-w-xs mx-auto">
+              <p className="text-muted font-body max-w-xs mx-auto">
                 {step.description}
               </p>
             </div>

@@ -31,13 +31,13 @@ export function FAQSection() {
   ];
 
   return (
-    <section id="faq" className="w-full py-20 bg-[#1B2240]">
+    <section id="faq" className="w-full py-20 bg-navy">
       <div className="max-w-4xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-semibold text-[#FFF9F0] mb-4 font-['Poppins']">
+          <h2 className="text-4xl font-semibold text-cream mb-4 font-heading">
             Frequently asked questions
           </h2>
-          <p className="text-lg text-[#6C7280] max-w-2xl mx-auto font-['Roboto']">
+          <p className="text-lg text-muted max-w-2xl mx-auto font-body">
             Everything you need to know about turning your computer into an earning machine.
           </p>
         </div>
@@ -49,16 +49,16 @@ export function FAQSection() {
                 className="w-full text-left p-6 flex items-center justify-between hover:bg-white/5 transition-colors"
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
               >
-                <span className="text-lg font-semibold text-[#FFF9F0] font-['Poppins']">
+                <span className="text-lg font-semibold text-cream font-heading">
                   {faq.question}
                 </span>
-                <span className="text-[#39E19D] text-2xl">
+                <span className="text-primary text-2xl">
                   {openIndex === index ? '−' : '+'}
                 </span>
               </button>
               {openIndex === index && (
                 <div className="px-6 pb-6">
-                  <p className="text-[#6C7280] font-['Roboto'] leading-relaxed">
+                  <p className="text-muted font-body leading-relaxed">
                     {faq.answer}
                   </p>
                 </div>

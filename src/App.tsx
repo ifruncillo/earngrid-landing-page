@@ -8,12 +8,10 @@ import { FAQSection } from "./components/FAQSection";
 import { WaitlistSection } from "./components/WaitlistSection";
 import { Footer } from "./components/Footer";
 import { BackgroundElements } from "./components/BackgroundElements";
-import { SEOHead } from "./components/SEOHead";
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-[#1B2240] relative">
-      <SEOHead />
+    <div className="min-h-screen bg-navy relative">
       <BackgroundElements />
       <Header />
       <main>
